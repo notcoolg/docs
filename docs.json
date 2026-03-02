@@ -23,7 +23,9 @@
         }
       ]
     },
-    "groups": []
+    "pages": [
+      "home"
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
