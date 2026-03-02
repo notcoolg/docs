@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "EcoWestern Support",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#086d00",
+    "light": "#086d00",
+    "dark": "#086d00"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/ecowesternicon(1).png",
+    "dark": "/images/ecoclover.png"
+  },
   "navigation": {
     "global": {
       "anchors": [
@@ -28,16 +31,12 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/ecowesternicon(1).png",
+    "dark": "/images/ecoclover.png",
+    "href": "https://ecowestern.net"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
@@ -56,11 +55,32 @@
      "vscode"
    ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "background": {
+    "decoration": "windows"
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "thumbnails": {
+    "appearance": "dark"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "latex": true
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "search": {
+    "prompt": "Ask Azura..."
+  },
+  "interaction": {
+    "drilldown": true
+  },
+  "seo": {
+    "indexing": "navigable"
+  },
+  "fonts": {
+    "family": "Google Sans"
   }
 }
