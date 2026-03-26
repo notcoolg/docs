@@ -20,7 +20,40 @@
         ]
       },
       {
+        "product": "Economic ID",
+        "icon": "id-badge",
+        "pages": [
+          "whatis",
+          {
+            "group": "Getting Started",
+            "pages": [
+              "how-it-works",
+              "signup"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "managing-account",
+              "ecoverify"
+            ]
+          },
+          {
+            "group": "SSO",
+            "pages": [
+              "sso-overviewe",
+              "integration"
+            ]
+          }
+        ]
+      },
+      {
         "product": "Azura",
+        "icon": "hexagon",
+        "color": {
+          "light": "#ffc700",
+          "dark": "#ffc700"
+        },
         "pages": [
           "getting-started",
           "artifacts",
@@ -29,6 +62,67 @@
           "memory",
           "omnibox-and-commands",
           "tips-and-tricks"
+        ]
+      },
+      {
+        "product": "eChat",
+        "pages": [
+          "echat-intro",
+          {
+            "group": "Getting Started",
+            "pages": [
+              "what-is",
+              "creating-account",
+              "installing",
+              "setting-up"
+            ]
+          },
+          {
+            "group": "Messaging",
+            "pages": [
+              "sending",
+              "rich-media",
+              "reactions",
+              "gifs",
+              "voice"
+            ]
+          },
+          {
+            "group": "Calls",
+            "pages": [
+              "making-calls",
+              "group-calls",
+              "call-settings"
+            ]
+          },
+          {
+            "group": "Contacts",
+            "pages": [
+              "managing"
+            ]
+          },
+          {
+            "group": "Groups and Channels",
+            "pages": [
+              "channels",
+              "creating-groups",
+              "managing-groups"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "appearance",
+              "notifications",
+              "privacy"
+            ]
+          },
+          {
+            "group": "Tips & Tricks",
+            "pages": [
+              "tips"
+            ]
+          }
         ]
       }
     ]
