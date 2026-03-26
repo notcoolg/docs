@@ -1,0 +1,203 @@
+---
+title: "Tips and Tricks"
+---
+
+Get more out of Azura with these practical tips for casual users and power users alike.
+
+---
+
+## General Tips
+
+### Be specific for better results
+
+Vague prompts get vague answers. Add context to get precise, useful responses.
+
+| Instead of... | Try... |
+| --- | --- |
+| _"Fix my code"_ | _"Fix the bug in this Python function that causes an IndexError when the list is empty"_ |
+| _"Write an email"_ | _"Write a professional follow-up email to a client who hasn't responded in two weeks, keeping the tone friendly but firm"_ |
+| _"Explain this"_ | _"Explain how JWT authentication works to someone who knows JavaScript but has never built a backend"_ |
+
+### Ask Azura to think step by step
+
+For complex problems, tell Azura to reason through it:
+
+- _"Think step by step before answering"_
+- _"Walk me through your reasoning"_
+- _"Show your work"_
+
+Or switch to **Azura 1-Consider or 1-Plus**, which do this automatically.
+
+### Give Azura a role
+
+Prompt Azura to respond as an expert:
+
+- _"As a senior backend engineer, review this API design"_
+- _"You are a UX designer. Critique this layout"_
+- _"Act as a technical writing expert and improve the clarity of this documentation"_
+
+### Ask for multiple options
+
+When you're not sure what you want, ask for alternatives:
+
+- _"Give me three different approaches to solving this problem"_
+- _"Suggest five different names for my app"_
+- _"Rewrite this paragraph in three different tones: formal, casual, and witty"_
+
+---
+
+## [Omnibox & Commands](/omnibox-and-commands)
+
+### Slash commands at a glance
+
+| Command | What it does |
+| --- | --- |
+| `/basic` | Fast model for quick tasks |
+| `/consider` | Deep reasoning model |
+| `/plus` | Premium model with vision |
+| `/clear` | Wipe current conversation |
+| `/summarize` | Get a conversation summary |
+| `/tokens` | View token usage |
+| `/theme` | Toggle dark/light mode |
+| `/artifacts` | Toggle the artifact panel |
+| `/settings` | Open Settings |
+| `/forget` | Clear long-term memory |
+| `/help` | See all commands |
+
+### Switch models without lifting your hands
+
+```text
+/basic       ← fastest
+/consider    ← deeper thinking
+/plus        ← images + best quality
+```
+
+### Use `/summarize` before starting a new topic
+
+Before switching to a new subject mid-conversation, run `/summarize`. This gives you a clean summary you can reference or share, and helps Azura stay focused on what matters.
+
+---
+
+## Working with [Artifacts](./artifacts)
+
+### Ask Azura to build interactive things
+
+Don't just ask for code, ask Azura to _make something_ you can play with:
+
+- _"Build an interactive bar chart using React that I can edit"_
+- _"Create a password strength checker that gives live feedback"_
+- _"Make a Mermaid diagram of how this system works"_
+
+### Request revisions naturally
+
+Artifacts support iteration. Just describe what you want changed:
+
+- _"Make the button red and add a hover effect"_
+- _"Add a reset button to the counter"_
+- _"Rewrite the diagram to include the caching layer"_
+
+### Download artifacts for offline use
+
+Click the **download** button in the artifact toolbar to save any artifact as a file. Useful for:
+
+- Saving React components to drop into a project
+- Keeping a copy of a generated document
+- Exporting a Mermaid diagram for a presentation
+
+### Toggle between code and preview
+
+React and HTML artifacts show a toggle between **Code view** and **Preview view**. Switch to Code if you want to understand or copy the implementation.
+
+---
+
+## [Memory](/memory)
+
+### Tell Azura things directly
+
+You don't have to wait for Azura to pick up on preferences organically. Just tell it:
+
+- _"Remember that I always want code examples in TypeScript, not JavaScript"_
+- _"Note that I'm building an app called Prism and it uses Next.js with Supabase"_
+- _"Remember my preferred response style is concise bullet points"_
+
+### Check what Azura knows about you
+
+Open **Settings → Memory** (or type `/settings`) to view all stored memories. You might be surprised what it's picked up, and you can delete anything you don't want there.
+
+### Clear memory before sensitive topics
+
+If you're discussing something you'd rather not have stored, disable memory before the conversation:
+
+1. Open **Settings → Memory**
+2. Click **Disable**
+3. Have your conversation
+4. Re-enable memory when done
+
+---
+
+## Productivity Hacks
+
+### Use Azura as a rubber duck
+
+Stuck on a problem? Explain it to Azura out loud (in text). The act of articulating the problem often helps you find the answer yourself, and Azura can fill in the rest.
+
+### Draft with Azura, edit yourself
+
+Use Azura to get a rough version of something done fast (email, blog post, report), then do your own editing pass. This is almost always faster than writing from scratch.
+
+### Chain prompts for complex outputs
+
+Break large tasks into steps:
+
+1. _"Outline the structure of a REST API for a task management app"_
+2. _"Now generate TypeScript interfaces for each resource"_
+3. _"Create an OpenAPI YAML spec based on those interfaces"_
+
+Each step builds on the last, and you can course-correct at any point.
+
+### Use artifacts for living documents
+
+Instead of pasting long text into chat, ask Azura to create a Markdown artifact. You can then ask for specific sections to be revised without cluttering the conversation.
+
+### Ask Azura to explain its own output
+
+If Azura gives you code or a complex answer you don't fully understand:
+
+- _"Explain this line by line"_
+- _"What would happen if I changed X to Y here?"_
+- _"Are there any edge cases or gotchas I should know about?"_
+
+---
+
+## When Things Go Wrong
+
+### Azura gave a wrong answer
+
+AI models can make mistakes. If something seems off:
+
+- Ask Azura to double-check: _"Are you sure about that? Please verify."_
+- Ask for sources or reasoning: _"Walk me through how you got to that conclusion"_
+- Switch to **Azura 1-Consider** for more careful reasoning on factual or technical questions
+
+### The response was cut off
+
+If a long response stops mid-sentence, just say:
+
+- _"Continue"_
+- _"Keep going from where you left off"_
+
+### Azura seems confused about the context
+
+Long conversations can get muddled. Try:
+
+- `/summarize` to compress history
+- Starting a new conversation and pasting in a brief summary of what's been discussed
+- Being explicit: _"Forget what we discussed earlier about X. Focus only on Y."_
+
+### The artifact didn't render correctly
+
+If an artifact shows an error or looks wrong:
+
+- Ask Azura to fix it: _"The artifact has an error. Please debug and fix it."_
+- Describe what you see: _"The button is overlapping the title. Fix the layout."_
+- Try a different approach: _"Rewrite this as an HTML artifact instead of React"_

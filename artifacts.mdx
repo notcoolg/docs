@@ -1,0 +1,146 @@
+---
+title: "Artifacts"
+---
+
+Azura can create rich, interactive content right alongside your conversation using the **Artifact** system. When Azura generates a piece of substantial content, like a React component, a Python script, a diagram, or a full document, it appears in a dedicated side panel so you can view and interact with it without disrupting the chat.
+
+## What is an Artifact?
+
+An artifact is a self-contained piece of content created by Azura during a conversation. Artifacts:
+
+- Live in their own panel to the right of the chat
+- Can be rendered and interacted with (not just read as plain text)
+- Are saved to your account and tied to the conversation
+- Support versioning and multiple artifacts per conversation
+
+---
+
+## Supported Artifact Types
+
+| Type | Description |
+| --- | --- |
+| `react` | Live, interactive React components rendered in the browser |
+| `html` | HTML pages and SVG graphics rendered in a sandboxed frame |
+| `javascript` | JavaScript code with syntax highlighting |
+| `typescript` | TypeScript code with syntax highlighting |
+| `python` | Python code with syntax highlighting and optional execution |
+| `markdown` | Fully rendered Markdown with GFM, tables, task lists, and math |
+| `json` | Formatted and syntax-highlighted JSON data |
+| `css` | CSS stylesheets with syntax highlighting |
+| `svg` | Scalable Vector Graphics rendered inline |
+| `mermaid` | Diagrams and flowcharts using Mermaid syntax |
+| `code` | Generic code with syntax highlighting (when language is unspecified) |
+| `document` | Plain text documents |
+| `interactive` | Self-contained interactive experiences |
+
+---
+
+## The Artifact Panel
+
+When an artifact is created, the panel on the right side of the screen opens automatically.
+
+### Navigating Multiple Artifacts
+
+If a conversation has more than one artifact, tabs appear at the top of the panel so you can switch between them.
+
+### Artifact Actions
+
+Each artifact has a toolbar with options depending on its type:
+
+- **Expand / Fullscreen** — View the artifact in a larger window
+- **Open in new window** — Launch the artifact in a separate browser tab
+- **Copy to clipboard** — Copy the raw source code
+- **Download** — Save the artifact as a file
+- **View metadata** — See the artifact's title, type, author, tags, and description
+
+### Toggling the Panel
+
+Use `/artifacts` in the Omnibox, or click the panel toggle button in the header, to show or hide the artifact panel.
+
+---
+
+## Asking Azura to Create an Artifact
+
+Simply ask Azura in natural language. Azura will decide automatically when an artifact is appropriate.
+
+**Examples:**
+
+- _"Build me a to-do list app in React"_
+- _"Create an HTML animation of a bouncing ball"_
+- _"Write a Python script to sort a CSV file"_
+- _"Generate a flowchart of the user authentication process"_
+- _"Make a markdown document summarizing our conversation as a project plan"_
+- _"Draw an SVG logo with my initials"_
+
+Azura can also be directed explicitly:
+
+- _"Create a React artifact for a countdown timer"_
+- _"Show the database schema as a Mermaid diagram"_
+- _"Give me a JSON artifact of the API response structure"_
+
+---
+
+## React Artifacts
+
+React artifacts are the most powerful artifact type. They run as live components in your browser.
+
+- Full support for React hooks (`useState`, `useEffect`, etc.)
+- Rendered using Babel in a sandboxed environment
+- Toggle between **Code** view and **Preview** view
+- Great for: UI components, calculators, games, interactive dashboards
+
+**Example prompt:** _"Build me an interactive color picker with hex and RGB output"_
+
+---
+
+## HTML Artifacts
+
+HTML artifacts render full HTML (including CSS and inline JavaScript) inside a sandboxed iframe.
+
+- CSS animations, transitions, and custom layouts all work
+- JavaScript is sandboxed, no access to parent page or cookies
+- Great for: landing page mockups, visualizations, CSS experiments
+
+**Example prompt:** _"Create an animated gradient background with floating bubbles"_
+
+---
+
+## Mermaid Diagrams
+
+Azura can generate Mermaid diagrams for flowcharts, sequence diagrams, class diagrams, and more.
+
+**Example prompt:** _"Draw a sequence diagram showing how a login request flows from frontend to backend"_
+
+---
+
+## Markdown Documents
+
+Markdown artifacts are rendered with full GitHub Flavored Markdown (GFM) support:
+
+- Tables
+- Task lists (`- [ ]` and `- [x]`)
+- Code blocks with syntax highlighting
+- Math equations (via KaTeX)
+- Blockquotes and callouts
+
+**Example prompt:** _"Create a project roadmap document with phases, tasks, and a status table"_
+
+---
+
+## Security
+
+Azura takes security seriously when rendering artifacts:
+
+- HTML and React artifacts run in **sandboxed iframes** with restricted permissions
+- Artifacts cannot access your browser history, cookies, or local storage
+- No external network requests from within artifacts
+- Content is validated before rendering
+
+---
+
+## Tips for Working with Artifacts
+
+- **Ask for revisions:** Tell Azura "update the artifact to add a dark mode toggle" and it will create a new version.
+- **Download artifacts:** Use the download button in the artifact toolbar to save the file locally.
+- **Multiple artifacts:** A single conversation can have many artifacts, each gets its own tab.
+- **Expand for a better view:** Use the fullscreen/expand button when working with larger components or documents.

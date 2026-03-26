@@ -1,0 +1,96 @@
+---
+title: "Managing Conversations"
+---
+
+Azura stores all of your conversations so you can return to any chat at any time. This guide explains how to navigate conversation history, organize chats, and keep things tidy.
+
+## The Sidebar
+
+The sidebar on the left of the screen is your conversation hub. It shows a list of all your past and current conversations, most recent at the top.
+
+- **Click a conversation** to open it and continue where you left off
+- **The active conversation** is highlighted in the list
+- All conversation history, including messages, artifacts, and tool results, is preserved exactly as you left it
+
+---
+
+## Starting a New Conversation
+
+To start a fresh chat:
+
+- Click the **New Chat** button or the `+` icon in the header/sidebar
+- The chat area will clear and you'll see the Azura welcome screen
+- Your previous conversations remain in the sidebar
+
+> **Tip:** Starting a new conversation is a good way to reset context when moving to a completely different topic.
+
+---
+
+## Clearing the Current Conversation
+
+If you want to wipe the current conversation and start fresh (without creating a new chat entry):
+
+- Type `/clear` in the Omnibox and press Enter
+
+This clears the message history in the current session.
+
+---
+
+## Summarizing a Long Conversation
+
+When a conversation has gone on for a while and you want a concise recap:
+
+- Type `/summarize` in the Omnibox and press Enter
+
+Azura will read through the conversation and write a summary of the key points, decisions, and any outstanding items.
+
+This is especially useful before starting a new phase of a project or sharing context with someone else.
+
+---
+
+## Token Usage and Context Limits
+
+Each conversation has a **context window**, the maximum amount of text Azura can reference at once. As a conversation grows, you get closer to this limit.
+
+To check how many tokens you're using:
+
+```text
+/tokens
+```
+
+Azura will display your current input and output token counts for the session.
+
+**What to do when you're near the limit:**
+
+1. **Summarize** — use `/summarize` to ask Azura to compress the conversation into a shorter summary, then continue from there
+2. **Start fresh** — begin a new conversation. You can paste in a short summary from the previous chat to re-establish context
+3. **Switch models** — different models have different context window sizes
+
+---
+
+## Returning to a Past Conversation
+
+Your full conversation history is saved in the sidebar. Simply click any conversation in the list to re-open it.
+
+You can:
+
+- Pick up exactly where you left off
+- View all messages, tool results, and artifacts
+- Continue chatting — the conversation history is sent as context to Azura
+
+---
+
+## Artifacts and Conversations
+
+Each conversation has its own set of artifacts stored in the artifact panel. When you return to a conversation, the artifacts from that session are loaded automatically.
+
+Use `/artifacts` to toggle the panel open if it's not already visible.
+
+---
+
+## Tips for Power Users
+
+- **Name your conversations meaningfully** —  Give conversations descriptive names so you can find them quickly later.
+- **Start new conversations for new topics** — this keeps context clean and prevents Azura from mixing up information between unrelated projects.
+- **Use `/summarize` before hitting the token limit** — don't wait until you can't send more messages. Summarize early to preserve the flow of the conversation.
+- **Return to old conversations for reference** — your full chat history is an easy way to look up something Azura explained before without re-asking.

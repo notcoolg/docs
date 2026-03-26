@@ -12,8 +12,25 @@
     "dark": "/images/ecoclover.png"
   },
   "navigation": {
-    "pages": [
-      "home"
+    "products": [
+      {
+        "product": "General",
+        "pages": [
+          "home"
+        ]
+      },
+      {
+        "product": "Azura",
+        "pages": [
+          "getting-started",
+          "artifacts",
+          "image-and-file-attachments",
+          "managing-conversations",
+          "memory",
+          "omnibox-and-commands",
+          "tips-and-tricks"
+        ]
+      }
     ]
   },
   "logo": {
