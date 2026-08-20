@@ -16,6 +16,8 @@
 
 <!-- Add product-specific terms and preferred usage -->
 <!-- Example: Use "workspace" not "project", "member" not "user" -->
+ - Use **EcoWestern** for the company and **ecosystem** for the connected product family.
+ - Use **Economic ID**, **Azura**, and **eChat** exactly as branded.
 
 ## Style preferences
 
@@ -26,8 +28,11 @@
 - Use sentence case for headings
 - Bold for UI elements: Click **Settings**
 - Code formatting for file names, commands, paths, and code references
+ - Keep the visual language warm, grounded, and calm. Prefer clear hierarchy over decorative effects.
+ - Use sentence case for headings and descriptive link labels.
 
 ## Content boundaries
 
 <!-- Define what should and shouldn't be documented -->
 <!-- Example: Don't document internal admin features -->
+ - Do not document internal admin features or unpublished product behavior.

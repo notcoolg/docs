@@ -1,59 +1,45 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "EcoWestern Support",
   "colors": {
     "primary": "#086d00",
     "light": "#086d00",
-    "dark": "#086d00"
+    "dark": "#8fcf76"
   },
   "favicon": {
     "light": "/images/ecowesternicon(1).png",
     "dark": "/images/ecoclover.png"
   },
   "navigation": {
-    "products": [
+    "tabs": [
       {
-        "product": "General",
-        "pages": [
-          "home"
-        ]
+        "tab": "Home",
+        "icon": "house",
+        "pages": ["home"]
       },
       {
-        "product": "Economic ID",
+        "tab": "Economic ID",
         "icon": "id-badge",
         "pages": [
           "whatis",
           {
-            "group": "Getting Started",
-            "pages": [
-              "how-it-works",
-              "signup"
-            ]
+            "group": "Getting started",
+            "pages": ["how-it-works", "signup"]
           },
           {
             "group": "Account",
-            "pages": [
-              "managing-account",
-              "ecoverify"
-            ]
+            "pages": ["managing-account", "ecoverify"]
           },
           {
-            "group": "SSO",
-            "pages": [
-              "sso-overviewe",
-              "integration"
-            ]
+            "group": "Single sign-on",
+            "pages": ["sso-overviewe", "integration"]
           }
         ]
       },
       {
-        "product": "Azura",
+        "tab": "Azura",
         "icon": "hexagon",
-        "color": {
-          "light": "#ffc700",
-          "dark": "#ffc700"
-        },
+        "color": {"light": "#ffc700", "dark": "#ffc700"},
         "pages": [
           "getting-started",
           "artifacts",
@@ -65,63 +51,33 @@
         ]
       },
       {
-        "product": "eChat",
+        "tab": "eChat",
+        "icon": "message-circle",
         "pages": [
           "echat-intro",
           {
-            "group": "Getting Started",
-            "pages": [
-              "what-is",
-              "creating-account",
-              "installing",
-              "setting-up"
-            ]
+            "group": "Getting started",
+            "pages": ["what-is", "creating-account", "installing", "setting-up"]
           },
           {
             "group": "Messaging",
-            "pages": [
-              "sending",
-              "rich-media",
-              "reactions",
-              "gifs",
-              "voice"
-            ]
+            "pages": ["sending", "rich-media", "reactions", "gifs", "voice"]
           },
           {
             "group": "Calls",
-            "pages": [
-              "making-calls",
-              "group-calls",
-              "call-settings"
-            ]
+            "pages": ["making-calls", "group-calls", "call-settings"]
           },
           {
-            "group": "Contacts",
-            "pages": [
-              "managing"
-            ]
-          },
-          {
-            "group": "Groups and Channels",
-            "pages": [
-              "channels",
-              "creating-groups",
-              "managing-groups"
-            ]
+            "group": "People and spaces",
+            "pages": ["managing", "channels", "creating-groups", "managing-groups"]
           },
           {
             "group": "Settings",
-            "pages": [
-              "appearance",
-              "notifications",
-              "privacy"
-            ]
+            "pages": ["appearance", "notifications", "privacy"]
           },
           {
-            "group": "Tips & Tricks",
-            "pages": [
-              "tips"
-            ]
+            "group": "Tips and tricks",
+            "pages": ["tips"]
           }
         ]
       }
@@ -133,11 +89,20 @@
     "href": "https://ecowestern.net"
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "EcoWestern home",
+        "href": "https://ecowestern.net"
+      },
+      {
+        "label": "Status",
+        "href": "https://status.ecowestern.net"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Economic ID",
+      "href": "https://id.ecowestern.net"
     }
   },
   "contextual": {
@@ -153,7 +118,7 @@
    ]
   },
   "background": {
-    "decoration": "windows"
+    "decoration": "grid"
   },
   "appearance": {
     "default": "system"
