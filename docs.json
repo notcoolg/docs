@@ -21,18 +21,33 @@
         "tab": "Economic ID",
         "icon": "id-badge",
         "pages": [
-          "whatis",
+          "economic-id/what-is",
           {
             "group": "Getting started",
-            "pages": ["how-it-works", "signup"]
+            "pages": [
+              "economic-id/getting-started/how-it-works",
+              "economic-id/getting-started/create-account",
+              "economic-id/getting-started/email-troubleshooting"
+            ]
           },
           {
-            "group": "Account",
-            "pages": ["managing-account", "ecoverify"]
+            "group": "Sign-in and security",
+            "pages": [
+              "economic-id/sign-in-and-security/manage-account",
+              "economic-id/sign-in-and-security/security",
+              "economic-id/troubleshooting/account-access"
+            ]
           },
           {
-            "group": "Single sign-on",
-            "pages": ["sso-overviewe", "integration"]
+            "group": "Connected apps",
+            "pages": [
+              "economic-id/connected-apps/single-sign-on",
+              "economic-id/connected-apps/use-with-products"
+            ]
+          },
+          {
+            "group": "Economic Organizations",
+            "pages": ["economic-id/organizations/invitations"]
           }
         ]
       },
@@ -97,6 +112,10 @@
       {
         "label": "Status",
         "href": "https://status.ecowestern.net"
+      },
+      {
+        "label": "EcoWestern Legal",
+        "href": "https://ecowestern.net/legal"
       }
     ],
     "primary": {

@@ -1,7 +1,3 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
 # Documentation project instructions
 
 ## About this project
@@ -16,8 +12,11 @@
 
 <!-- Add product-specific terms and preferred usage -->
 <!-- Example: Use "workspace" not "project", "member" not "user" -->
- - Use **EcoWestern** for the company and **ecosystem** for the connected product family.
+ - Use **EcoWestern** for the company.
+ - Use **EcoWestern EcoSystem** for the connected product family.
  - Use **Economic ID**, **Azura**, and **eChat** exactly as branded.
+ - Use **Economic Organization** for organizations.
+ - Do not use “Eco ID” or “EcoVerify” as product names.
 
 ## Style preferences
 
@@ -36,3 +35,6 @@
 <!-- Define what should and shouldn't be documented -->
 <!-- Example: Don't document internal admin features -->
  - Do not document internal admin features or unpublished product behavior.
+ - Separate consumer Economic ID guidance from developer and organization-administrator implementation details.
+ - Do not promise recovery, deletion, expiration periods, global sign-out, or support outcomes unless confirmed by product behavior.
+ - Tell users to try self-service recovery first. If it fails, direct them to the built-in support ticket system and remind them not to share secrets.

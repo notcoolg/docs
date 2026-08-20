@@ -1,53 +1,77 @@
 ---
 title: "EcoWestern Support"
-description: "Clear, practical support for Economic ID, Azura, and eChat."
+description: "Find clear answers and practical guides for the EcoWestern EcoSystem."
 sidebarTitle: "Home"
 icon: "house"
 ---
 
-Welcome to the official EcoWestern Support website. Find clear guidance for Economic ID, Azura, and eChat, and get back to what you were doing with less friction.
+<Hero
+  title="How can we help?"
+  description="Find clear answers, setup guides, and troubleshooting steps for the EcoWestern EcoSystem."
+  cta={{"label":"Open Economic ID","href":"https://id.ecowestern.net"}}
+  image={{"light":"/images/ecowesternicon(1).png","dark":"/images/ecoclover.png"}}
+/>
 
-<Note>
-  **Coming from Nova Suite?** Legacy Nova accounts are now part of the EcoWestern ecosystem. [Read about the migration](#).
-</Note>
+## Explore support
 
-## Start with what you need
-
-Choose a path below. Each guide keeps the next step close at hand.
+Choose a product to find getting-started guides, feature documentation, and troubleshooting help.
 
 <CardGroup cols={2}>
-  <Card icon="id-card" href="/whatis" title="Economic ID">
-    Set up your universal login, manage security, and update your credentials.
+  <Card icon="id-card" href="/economic-id/what-is" title="Economic ID">
+    Create and manage your account, secure your sign-in, and use one identity across supported EcoWestern products.
   </Card>
   <Card icon="sparkles" href="/getting-started" title="Azura">
-    Learn how to write prompts, manage data, and use our privacy-first AI.
+    Learn how to get started, work with artifacts, manage conversations, and use Azura effectively.
   </Card>
   <Card icon="message" href="/echat-intro" title="eChat">
-    Navigate secure text, video communication, and community spaces.
+    Learn about messaging, media, calls, groups, channels, and eChat settings.
   </Card>
-  <Card icon="scale-balanced" href="/privacy" title="Privacy & security">
-    Read our Terms of Service, Privacy Policy, and Acceptable Use Policy.
+  <Card icon="life-ring" href="mailto:hello@ecowestern.net" title="Contact support">
+    If self-service guidance does not resolve your issue, contact the support team. Do not share passwords or authentication codes.
+  </Card>
+</CardGroup>
+
+## Popular starting points
+
+<CardGroup cols={3}>
+  <Card icon="user-plus" href="/economic-id/getting-started/create-account" title="Create an Economic ID">
+    Set up your account and verify your email address.
+  </Card>
+  <Card icon="key-round" href="/economic-id/sign-in-and-security/manage-account" title="Reset your password">
+    Recover access with the password reset flow.
+  </Card>
+  <Card icon="shield-check" href="/economic-id/sign-in-and-security/security" title="Secure your account">
+    Set up passkeys and two-factor authentication.
+  </Card>
+  <Card icon="arrow-right-left" href="/economic-id/connected-apps/single-sign-on" title="Understand redirects">
+    Learn why products send you to Economic ID to sign in.
+  </Card>
+  <Card icon="users" href="/economic-id/organizations/invitations" title="Join an organization">
+    Accept an Economic Organization invitation.
+  </Card>
+  <Card icon="circle-help" href="/economic-id/troubleshooting/account-access" title="Troubleshoot access">
+    Resolve common sign-in, redirect, and account availability issues.
   </Card>
 </CardGroup>
 
 ## Common questions
 
 <AccordionGroup>
-  <Accordion icon="key" title="How do I reset my Economic ID password?">
-    If you've lost access, use the reset option in the Economic ID login portal. [Learn how Economic ID works](/whatis).
+  <Accordion icon="key-round" title="How do I reset my Economic ID password?">
+    Open the [Economic ID login page](https://id.ecowestern.net/auth/login), select **Forgot password?**, and follow the reset instructions. If self-service recovery does not work, contact support. Recovery is not guaranteed.
   </Accordion>
-  <Accordion icon="shield-check" title="Does Azura AI train on my private data?">
-    **No.** Your private conversations, encrypted content, and personal prompts are not used to train public foundational models without your explicit consent.
+  <Accordion icon="arrow-right-left" title="Why was I redirected to Economic ID?">
+    Supported EcoWestern products use Economic ID for sign-in. After you authenticate, Economic ID returns you to the product you were using.
   </Accordion>
-  <Accordion icon="arrow-right-arrow-left" title="What happened to Nova Suite?">
-    Nova Suite has been integrated into the EcoWestern ecosystem. [Read the migration note](#).
+  <Accordion icon="shield-alert" title="What should I do if I see an authentication error?">
+    Record the error code, application name, approximate time, device, and browser. Share copied error URLs only through an approved support channel, and never share passwords, verification codes, backup codes, or session tokens.
   </Accordion>
 </AccordionGroup>
 
-## Still looking?
+## Need more help?
 
-If the guide you need isn't here, our support team can help.
+Start with the relevant product guide and try the available self-service options. If they do not resolve your issue, submit a support ticket or contact the support team.
 
-<Card icon="envelope" href="mailto:hello@ecowestern.net" title="Contact Support">
-  Reach out to us at [hello@ecowestern.net](mailto:hello@ecowestern.net) for account or technical assistance.
+<Card icon="life-ring" href="mailto:hello@ecowestern.net" title="Contact support">
+  Include the product, what you were trying to do, the approximate time, and any non-sensitive error details. Never include secrets.
 </Card>
