@@ -1,0 +1,46 @@
+---
+title: "Share a document with a link"
+description: "Create read-only share links with optional passwords, expiry, and view limits."
+sidebarTitle: "Share a document"
+icon: "share-2"
+---
+
+You can share any Envisiondocs document with a link. People who open the link see a read-only view of the document. Only documents can be shared this way — notes and decks have no share links.
+
+## Create a share link
+
+1. Open the document.
+2. Click **Share** in the title bar.
+3. In the **"Share document"** dialog, optionally set:
+   - **Password (optional)** — the placeholder is *"Leave blank for public access"*.
+   - **Expires in (days)** — the default is **Never**.
+   - **Max views** — the default is **Unlimited**.
+4. Click **Create share link**.
+5. The link appears in a "Share link created" box. Click **Copy** and send the link to your recipients.
+
+Share links look like `https://your-enfusion-address/docs/shared/{token}`. Each link is unique.
+
+## What recipients see
+
+Recipients open the link in a browser and see a read-only view badged **"Shared document | Read only"**. They cannot edit the document.
+
+If you set a password, recipients must enter it first. Passwords are case-sensitive.
+
+## How protections work
+
+- **Password** — the password is hashed before storage. Anyone with the link and the password can view the document.
+- **Expiry** — the link stops working after the number of days you set.
+- **Max views** — the link stops working after the number of views you set. Views are counted per link.
+- **Read-only** — recipients can never edit your document through a share link.
+
+## Revoke a share link
+
+1. Open the document and click **Share**.
+2. Find the link under **Active shares**. The list shows each link's token prefix, view count, and protection status.
+3. Click **Remove**.
+
+Removing a link deactivates it immediately. The link cannot be reused — if you want to share again, create a new link.
+
+## Troubleshooting
+
+See [Troubleshoot shared links](/enfusion/troubleshooting/shared-links) if a recipient reports that a link does not work or the password is rejected.

@@ -1,0 +1,92 @@
+---
+title: "Troubleshooting Azura"
+description: "Fix common Azura errors, limits, upload problems, and connection issues."
+sidebarTitle: "Troubleshooting"
+icon: "circle-help"
+---
+
+Try the self-service steps on this page before contacting support. Error wording can change over time, so match the situation rather than the exact text.
+
+## A response fails with a generic error
+
+**What you see:** an assistant message shows a generic error, such as "Sorry, an error occurred.", instead of a response.
+
+**Why:** a connection issue, a service problem, or a rejected request.
+
+**What to do:**
+
+1. Retry the message — hover the message and click the retry icon, or resend it.
+2. If it persists, check your connection and try again in a few minutes.
+3. If it keeps failing across multiple conversations and models, the service may be temporarily unavailable. Check the [status page](https://status.ecowestern.net).
+
+## You are signed out unexpectedly
+
+**What you see:** an authentication error, or a redirect to sign in mid-use.
+
+**Why:** your sign-in session expired or is invalid.
+
+**What to do:** refresh the page. You are redirected to sign in through Economic ID. Sign in again and continue. See [Sign in and your account](/azura/sign-in-and-account).
+
+## Usage limit reached
+
+**What you see:** sending is blocked with a message naming the limit type and a reset time.
+
+**Why:** you used a model's full quota for its rolling window. This is expected usage metering, per model, per account — not a bug.
+
+**What to do:** wait until the reset time shown, or switch to a different model — each model has its own separate quota. See [Understand usage limits](/azura/usage-limits).
+
+## Upload problems
+
+| Symptom | What to do |
+|---|---|
+| File rejected as too large | Compress or split the file |
+| File type rejected | Convert to a supported type (the error lists them) |
+| Image rejected as too large | Resize or compress the image |
+| Weekly image limit error | Wait for the weekly reset |
+| Per-conversation upload limit error | Start a new conversation |
+| "File must be an image" | Use the document **"Upload"** option instead |
+
+See [Upload files and images](/azura/upload-files-and-images) for how limits work.
+
+## "Network issue. Try again." in voice input
+
+The speech recognition service could not be reached. Check your connection and try again. Voice input requires a browser with speech recognition — Chrome or Edge is recommended.
+
+## Offline banner
+
+**What you see:** a red banner at the top reading "No internet connection. Messages may not be saved." with a **"Retry"** button.
+
+**What to do:** reconnect to the internet and click **"Retry"**. Azura requires an internet connection — nothing works offline, and messages sent while offline may be lost.
+
+## A tool card shows "Failed"
+
+One of Azura's actions did not complete — for example, a URL could not be read, or the Python code had an error. Expand the card to see the output, then ask Azura to retry or take a different approach. This is usually temporary or specific to the URL or code involved.
+
+## "Render Error" in an artifact
+
+An interactive artifact crashed while previewing. Switch to the **"Code"** tab to view the source, or ask Azura to fix the artifact. You can restore an older version from the **"History"** tab. See [Azura Artifacts](/azura/artifacts).
+
+## Conversation list problems
+
+- **"Failed to load conversations"** or **"Failed to load conversation"** — refresh the page and check your connection.
+- A conversation deleted on another device disappears everywhere. The list syncs in real time, so this is expected.
+
+## What never to share
+
+Never share any of the following with support or in chat:
+
+- Passwords or sign-in credentials
+- One-time codes or authentication codes
+- Recovery codes or backup codes
+- Session tokens or cookies
+
+Azura support will never ask for these. Account security is handled through [Economic ID](https://id.ecowestern.net).
+
+## When to contact support
+
+Try self-service first. If it does not resolve the issue, see [Contact support](/contact-support) to open a ticket. Route these to the right place:
+
+- **Persistent errors across multiple conversations and models** — likely a service issue. Check the [status page](https://status.ecowestern.net), then open a ticket.
+- **Billing, account recovery, password, or profile issues** — these live in **Economic ID**, not Azura. Go to [id.ecowestern.net](https://id.ecowestern.net).
+
+When you open a ticket, it is safe to include: the exact error text, the time it occurred, your browser and device, which model was in use, and whether it happens in a new conversation.

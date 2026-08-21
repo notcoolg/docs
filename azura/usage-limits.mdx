@@ -1,0 +1,37 @@
+---
+title: "Understand usage limits"
+description: "How Azura quotas, reset windows, and long conversations work."
+sidebarTitle: "Usage limits"
+icon: "gauge"
+---
+
+Each Azura model has a rolling usage window. The specific limits and reset windows can change over time, so this article explains how the system works rather than listing numbers.
+
+## Reading the context bar
+
+The context bar above the Omnibox shows:
+
+- **Used / limit** for the current model.
+- A progress bar that changes color as you approach the limit.
+- **"resets {time}"** — when your usage resets.
+
+## When you hit a limit
+
+Sending is blocked with a message naming the limit type and the exact reset time, such as "Token limit reached. Limit resets at {time}."
+
+Your options:
+
+1. **Wait until the reset time shown.**
+2. **Switch to a different model.** Each model's quota runs independently, so a model you have not used still has its full quota available.
+
+This is expected usage metering, tracked per model, per account — not a bug.
+
+## Check your usage
+
+Use the `/tokens` slash command in the Omnibox to see your current usage for the period.
+
+## Long conversations
+
+In very long conversations, Azura automatically summarizes older messages to stay within limits. The most recent messages are always kept in full; older context is condensed into a summary.
+
+From your perspective: in very long chats, Azura may lose track of details from much earlier in the conversation. If that happens, start a new conversation and bring the important details forward.

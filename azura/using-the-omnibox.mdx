@@ -1,0 +1,67 @@
+---
+title: "Using the Omnibox"
+description: "Type, speak, paste, and run slash commands in the Azura message input."
+sidebarTitle: "Using the Omnibox"
+icon: "message-square-text"
+---
+
+The **Omnibox** is the message input at the bottom of the chat. It handles typing, voice, pasting, uploads, and slash commands.
+
+## Type and send
+
+- Press **Enter** to send. Press **Shift Enter** to add a new line.
+- The box auto-expands as you type.
+- The placeholder text rotates between prompts such as "Message Azura...", "Ask me anything through the Omnibox...", and "What's on your mind?".
+
+## Paste long text as a file
+
+If you paste a large block of plain text (25 or more lines), Azura converts it into a `.txt` attachment named `Pasted text ({n} lines).txt` instead of flooding the chat. The full text stays available to Azura as an attachment.
+
+## Voice input
+
+1. Click the **+** menu next to the Omnibox and choose **"Voice Input"**.
+2. Speak. The overlay shows **"Listening for your voice..."** with a live waveform and interim transcript.
+3. Click **"Done"** to insert the transcript into the Omnibox, or **"Cancel"** to discard it.
+
+Voice input uses your browser's speech recognition and works best in Chrome or Edge. Other browsers may not offer it. If the speech service cannot be reached, you see **"Network issue. Try again."** — check your connection and try again.
+
+## Uploads
+
+Click the **+** menu next to the Omnibox to choose **"Upload image"** or **"Upload"** for documents. You can also paste images from the clipboard. See [Upload files and images](/azura/upload-files-and-images).
+
+## Slash commands
+
+Type **`/`** in the Omnibox to open the command list. Commands let you switch models, upload files, clear or summarize the conversation, open settings, browse skills, toggle the theme or artifact panel, clear AI memory, and view token usage.
+
+The exact set of commands can change over time. Type **`/`** in the Omnibox to see the current list, or use the `/help` command.
+
+## Keyboard shortcuts
+
+Press **?** or **Ctrl /** (or **Cmd /**) to open the **"Keyboard Shortcuts & Commands"** overlay. Press **Escape** to close it.
+
+| Shortcut | Action |
+|---|---|
+| **Enter** | Send message |
+| **Shift Enter** | New line in message |
+| **?** or **Ctrl /** | Show help overlay |
+| **Ctrl Shift N** | New chat |
+| **Escape** | Close dialogs and menus |
+
+## Reading responses
+
+- Responses render Markdown, tables, and math.
+- Code blocks have a language header and a **"Copy"** button that flips to **"Copied"**.
+- For reasoning models, a collapsible **"Considerations"** panel shows Azura's thinking while it generates, marked **"Done"** when finished.
+- When Azura takes actions — searching the web, running Python, reading a URL — you see tool cards with a status badge: **"Running"**, **"Success"**, or **"Failed"**. Expand a card to see the output, with a **"Copy output"** button. Web searches render as a **"Sources used"** list with titles, links, and snippets. Multiple tool calls collapse into a **"Summary"** block showing "{n} action(s) taken".
+- Suggested follow-up chips appear under responses, such as **"Explain the code"** or **"Summarize this"**. Click **"Dismiss suggestions"** to hide them.
+
+## Message actions
+
+- **Assistant messages** (on hover): Copy, Retry (last message only), thumbs up, thumbs down.
+- **Your messages**: click the pencil icon to edit inline, then choose **"Save & Restart"** to re-send the edited message and regenerate the response, or **"Cancel"** to discard.
+- Each message shows a timestamp and a token count.
+- Attachments appear as image thumbnails or file chips.
+
+## Interactive elements
+
+Azura can build in-chat questionnaires, recipe cards, and card sets. These appear as a **"View {title}"** button in the message. Questionnaires show your progress ("{n} of {m}"), a **"Skip"** or **"Submit"** button, and a **"Type your answer"** box. Your answers are sent back to Azura so it can respond to them.

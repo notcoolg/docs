@@ -1,0 +1,60 @@
+---
+title: "Manage conversations"
+description: "Rename, pin, archive, delete, and export your Azura conversations."
+sidebarTitle: "Manage conversations"
+icon: "folder-open"
+---
+
+Your conversations live in the sidebar, grouped under **"Pinned"**, **"Today"**, **"Yesterday"**, **"Last Week"**, **"Last Month"**, and **"Older"**. Hover a conversation to see its actions.
+
+## Rename
+
+1. Hover the conversation in the sidebar and click **Rename**.
+2. Edit the title inline. Press **Enter** to save or **Escape** to cancel.
+
+## Pin and archive
+
+- **Pin** moves a conversation to the top under **"Pinned"**. Click **Unpin** to reverse it.
+- **Archive** removes a conversation from the main list without deleting it. Click **Unarchive** to bring it back.
+
+## Delete a conversation
+
+1. Hover the conversation and click **Delete**.
+2. The **"Delete Conversation"** dialog asks: `Are you sure you want to delete "{title}"? This cannot be undone.`
+3. Confirm with **"Delete"**.
+
+Deletion cannot be undone, and it syncs everywhere immediately — the conversation disappears on all your devices.
+
+## Delete several conversations
+
+1. Click the select-multiple toggle (tooltip **"Select multiple"**).
+2. Select the conversations. A bar shows **"{n} selected"**.
+3. Click **"Delete"**.
+4. The **"Delete Conversations"** dialog asks: `Are you sure you want to delete {n} conversation(s)? This cannot be undone.`
+5. Confirm with **"Delete All"**.
+
+Click **"Exit bulk mode"** when you are done.
+
+## Clear a conversation
+
+Use the `/clear` slash command to delete the current conversation and return home. The **"Clear Conversation"** dialog warns "This cannot be undone." — confirm with **"Clear"**.
+
+## Export a conversation
+
+Use the export menu in the header (tooltip **"Export Conversation"**):
+
+- **"Export as PDF"** — opens your browser's print dialog. Choose **"Save as PDF"** as the printer destination.
+- **"Export as Markdown"** — downloads a `.md` file.
+- **"Export as JSON"** — downloads a `.json` file.
+
+## Search and pagination
+
+- The sidebar search box (placeholder **"Search conversations..."**) filters your conversations. If nothing matches, it shows `No conversations match "{query}"`.
+- The list loads 20 conversations at a time. Click **"Load more"** to see older ones.
+- If you have no conversations, the sidebar shows **"No conversations yet"**.
+
+## Syncing across devices
+
+- Your **conversation list** — titles, pin and archive state, ordering — syncs in real time across devices signed into the same account.
+- **Message content** loads when you open a conversation. It does not live-stream to your other devices.
+- Artifacts, memory, and usage do not sync in real time.

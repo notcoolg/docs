@@ -1,0 +1,46 @@
+---
+title: "Azura Artifacts"
+description: "Code, documents, web pages, diagrams, and live apps in the artifact side panel."
+sidebarTitle: "Azura Artifacts"
+icon: "boxes"
+---
+
+**Azura Artifacts** are standalone pieces of content Azura creates during a conversation — code, documents, web pages, diagrams, and live interactive apps. They appear in a dedicated side panel titled **"Azura Artifacts"**.
+
+The exact set of supported types can change over time. The artifact list shows each item's type badge.
+
+## The artifact panel
+
+- The panel subtitle shows **"{n} active artifact(s)"**.
+- When you are viewing one artifact, a **"Back to collection"** link returns to the list.
+- If you close the panel while artifacts exist, a floating amber button (tooltip `Show {n} Azura Artifact(s)`) brings it back.
+- **"Download All"** (tooltip "Download all artifacts as ZIP") appears when there is more than one artifact. It shows **"Zipping..."** while working.
+- The panel is resizable by dragging its edge. On mobile it opens full-screen.
+- Empty state: **"No artifacts yet"** — "Artifacts will appear here when the AI creates interactive components, code snippets, or documents for you."
+- List entries show the title, type, size (`{type} • {n} lines • {n} characters`), and "Created {date}".
+
+You can also toggle the panel with the `/artifacts` slash command.
+
+## The viewer
+
+Opening an artifact shows three tabs: **"Preview"**, **"Code"**, and **"History"**.
+
+### Preview
+
+Interactive artifacts, such as web apps, run live in a secure sandbox. Documents render formatted.
+
+### Code
+
+The **"Code"** tab shows the artifact's source. Toolbar actions include:
+
+- **"Copy share link"**
+- **"Copy code"**
+- **"Download"** — the file extension matches the artifact type
+
+### History
+
+The **"History"** tab shows **"Version History"**. Every save creates a version entry — **"Version {n}"** with a timestamp and a **"View version"** link. While viewing an older version, click **"Restore this version"** to roll back to it.
+
+## If a preview crashes
+
+If an interactive artifact shows a **"Render Error"**, switch to the **"Code"** tab to view the source, or ask Azura to fix the artifact. You can restore an older working version from the **"History"** tab. See [Troubleshooting](/azura/troubleshooting).

@@ -15,7 +15,7 @@
       {
         "tab": "Home",
         "icon": "house",
-        "pages": ["home"]
+        "pages": ["home", "contact-support"]
       },
       {
         "tab": "Economic ID",
@@ -56,13 +56,94 @@
         "icon": "hexagon",
         "color": {"light": "#ffc700", "dark": "#ffc700"},
         "pages": [
-          "getting-started",
-          "artifacts",
-          "image-and-file-attachments",
-          "managing-conversations",
-          "memory",
-          "omnibox-and-commands",
-          "tips-and-tricks"
+          "azura/what-is",
+          {
+            "group": "Getting started",
+            "pages": [
+              "azura/getting-started",
+              "azura/sign-in-and-account"
+            ]
+          },
+          {
+            "group": "Chatting",
+            "pages": [
+              "azura/using-the-omnibox",
+              "azura/choosing-a-model",
+              "azura/upload-files-and-images",
+              "azura/usage-limits"
+            ]
+          },
+          {
+            "group": "Personalize",
+            "pages": [
+              "azura/memory",
+              "azura/custom-instructions",
+              "azura/skills"
+            ]
+          },
+          {
+            "group": "Your work",
+            "pages": [
+              "azura/artifacts",
+              "azura/managing-conversations",
+              "azura/azura-on-the-go"
+            ]
+          },
+          {
+            "group": "Troubleshooting and privacy",
+            "pages": [
+              "azura/troubleshooting",
+              "azura/privacy-and-your-data"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Enfusion",
+        "icon": "layout-grid",
+        "pages": [
+          "enfusion/what-is",
+          {
+            "group": "Getting started",
+            "pages": [
+              "enfusion/getting-started/workspace-tour",
+              "enfusion/getting-started/sign-in"
+            ]
+          },
+          {
+            "group": "Documents (Envisiondocs)",
+            "pages": [
+              "enfusion/documents/create-and-format-documents",
+              "enfusion/documents/export-or-print-a-document",
+              "enfusion/documents/share-a-document"
+            ]
+          },
+          {
+            "group": "Notes (Envisionjot)",
+            "pages": ["enfusion/notes/take-notes-with-envisionjot"]
+          },
+          {
+            "group": "Decks (Envisiondeck)",
+            "pages": ["enfusion/decks/build-and-present-a-deck"]
+          },
+          {
+            "group": "Canvas",
+            "pages": ["enfusion/canvas/use-inline-canvases"]
+          },
+          {
+            "group": "Templates",
+            "pages": ["enfusion/templates/start-from-a-template"]
+          },
+          "enfusion/find-your-work",
+          "enfusion/light-and-dark-mode",
+          "enfusion/keyboard-shortcuts",
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "enfusion/troubleshooting/shared-links",
+              "enfusion/troubleshooting/saving-and-sign-in"
+            ]
+          }
         ]
       },
       {

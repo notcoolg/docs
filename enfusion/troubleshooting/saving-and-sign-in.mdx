@@ -1,0 +1,58 @@
+---
+title: "Troubleshoot saving and sign-in issues"
+description: "Fix sign-in errors, creation failures, and unsaved changes in Enfusion."
+sidebarTitle: "Troubleshoot saving and sign-in"
+icon: "circle-help"
+---
+
+This page covers the most common Enfusion problems. Try the self-service steps here before contacting support.
+
+## "You need to be signed in to create a deck" or "...a note"
+
+Your session expired.
+
+**What to do:** Refresh the page. Enfusion sends you to Economic ID to sign in, then returns you to where you were. See [Sign in with Economic ID](/enfusion/getting-started/sign-in).
+
+## "Could not create the deck. Please try again." or "Could not create the note. Please try again."
+
+This is usually a temporary network or service problem.
+
+**What to do:**
+
+1. Retry once.
+2. If it keeps failing, check the [status page](https://status.ecowestern.net) for service issues.
+3. Try again later if the status page shows an incident.
+
+## "Deck not found", "Note not found", or "Document not found"
+
+The item was deleted, or it belongs to a different account. Enfusion enforces ownership server-side, so an ID or link alone never grants access to someone else's content.
+
+**What to do:** Confirm you are signed in with the account that owns the item. If the item was deleted, it cannot be recovered — there is no trash or recycle bin.
+
+## Changes are not saving
+
+Check the save indicator in the header:
+
+- **"Saving..."** — a save is in progress. Wait for it to finish.
+- **"Saved"** — your changes are stored.
+- **"Unsaved"** — changes are waiting to save.
+
+**What to do:**
+
+1. Press **Ctrl S** (or **Cmd S**) to force a save.
+2. Check your connection. If you are offline, changes cannot save. Reconnect and save.
+3. Reload the page and confirm your latest changes are present.
+
+## The canvas feels laggy
+
+Canvases slow down with many elements.
+
+**What to do:** Zoom out with the zoom control (25%–300%), or split content across more slides or canvases. See [Use inline canvases](/enfusion/canvas/use-inline-canvases).
+
+## Sign-in problems
+
+If you cannot get past Economic ID, see [Troubleshoot Economic ID access](/economic-id/troubleshooting/account-access).
+
+## Still stuck?
+
+If self-service steps do not resolve the problem, see [Contact support](/contact-support) to open a ticket. Include the error message text, the approximate time, your browser and operating system version, and the affected document, note, or deck title. Never include your password, authentication codes, backup codes, or session tokens.
