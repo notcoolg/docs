@@ -15,7 +15,7 @@
       {
         "tab": "Home",
         "icon": "house",
-        "pages": ["home", "contact-support"]
+        "pages": ["home", "contact-support", "glossary"]
       },
       {
         "tab": "Economic ID",
@@ -198,12 +198,7 @@
         "label": "EcoWestern Legal",
         "href": "https://ecowestern.net/legal"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Open Economic ID",
-      "href": "https://id.ecowestern.net"
-    }
+    ]
   },
   "contextual": {
     "options": [
